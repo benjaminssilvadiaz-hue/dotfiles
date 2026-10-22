@@ -1,0 +1,36 @@
+# Prompt "Espacial": negro, blanco, cian y toques dorados
+format = """[✦ ](dorado)$os$directory$git_branch$git_status$cmd_duration$line_break$character"""
+palette = "espacial"
+
+[palettes.espacial]
+cian = "#22D3EE"
+dorado = "#F5C542"
+blanco = "#F5F5F7"
+gris = "#96969F"
+rojo = "#F87171"
+
+[os]
+disabled = false
+style = "cian"
+
+[os.symbols]
+Arch = " "
+
+[directory]
+style = "bold cian"
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+style = "dorado"
+
+[git_status]
+style = "dorado"
+
+[cmd_duration]
+style = "gris"
+format = "[$duration]($style) "
+
+[character]
+success_symbol = "[❯](bold cian)"
+error_symbol = "[❯](bold rojo)"
